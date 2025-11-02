@@ -1,0 +1,85 @@
+<jasperReport name="report_empleado" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b1242d13-6dba-4a89-83db-ed3c9403f35d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="mySQL_local"/>
+	<query language="SQL"><![CDATA[SELECT * FROM db_supermercado.empleados]]></query>
+	<field name="idEmpleado" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idEmpleado"/>
+		<property name="com.jaspersoft.studio.field.label" value="idEmpleado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="nombres" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombres"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombres"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="apellidos" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.label" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="fecha_inicio_labores" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="fecha_inicio_labores"/>
+		<property name="com.jaspersoft.studio.field.label" value="fecha_inicio_labores"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<group name="idEmpleado">
+		<expression><![CDATA[$F{idEmpleado}]]></expression>
+	</group>
+	<group name="nombres">
+		<expression><![CDATA[$F{nombres}]]></expression>
+	</group>
+	<group name="apellidos">
+		<expression><![CDATA[$F{apellidos}]]></expression>
+	</group>
+	<group name="fecha_inicio_labores">
+		<expression><![CDATA[$F{fecha_inicio_labores}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="838035ba-25dc-4f29-abd4-a147169e988b" x="190" y="10" width="180" height="62" fontName="Algerian" fontSize="25.0" underline="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[EMPLEADOS]]></text>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="61" splitType="Stretch">
+		<element kind="staticText" uuid="8a698c9e-3b1b-42d9-b5ce-50a900632b32" x="0" y="0" width="100" height="30">
+			<text><![CDATA[idEmpleado]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="856d0f9b-c74a-447c-ad66-9b8af561acf3"/>
+		</element>
+		<element kind="staticText" uuid="9f432eea-d674-4c00-b1fe-195d0b89c1ba" x="80" y="0" width="100" height="30">
+			<text><![CDATA[nombres]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f8429e82-d48f-42ea-9316-7026ea66d146"/>
+		</element>
+		<element kind="staticText" uuid="c49fb12d-a44d-40e3-ab88-5e63124802d7" x="210" y="0" width="100" height="30">
+			<text><![CDATA[apellidos]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d3c187cd-d648-4160-a247-c15e78c7654a"/>
+		</element>
+		<element kind="staticText" uuid="8d04b224-4a0a-4999-9f26-4b6e383e4069" x="340" y="0" width="100" height="30">
+			<text><![CDATA[fecha_inicio_labores]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="320d783a-5969-4be0-b3cb-c6748e6173b9"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<element kind="textField" uuid="6a56e07a-5024-457f-9bb0-d12d856cea72" x="0" y="10" width="100" height="30">
+				<expression><![CDATA[$F{idEmpleado}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="856d0f9b-c74a-447c-ad66-9b8af561acf3"/>
+			</element>
+			<element kind="textField" uuid="1d31485b-fd81-4df5-85c0-3c134b0479d7" x="80" y="10" width="100" height="30">
+				<expression><![CDATA[$F{nombres}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f8429e82-d48f-42ea-9316-7026ea66d146"/>
+			</element>
+			<element kind="textField" uuid="f74fb5b9-abaa-4330-b8e9-b02863ce1f7a" x="210" y="10" width="100" height="30">
+				<expression><![CDATA[$F{apellidos}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d3c187cd-d648-4160-a247-c15e78c7654a"/>
+			</element>
+			<element kind="textField" uuid="7ea3cc55-11e2-4e8d-b198-694ae72faf7f" x="340" y="10" width="100" height="30">
+				<expression><![CDATA[$F{fecha_inicio_labores}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="320d783a-5969-4be0-b3cb-c6748e6173b9"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

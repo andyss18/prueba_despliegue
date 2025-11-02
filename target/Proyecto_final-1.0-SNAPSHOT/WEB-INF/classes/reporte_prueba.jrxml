@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Reporte de prueba válido -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports 
+                                  http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="reporte_prueba" pageWidth="595" pageHeight="842"
+              columnWidth="555" leftMargin="20" rightMargin="20"
+              topMargin="20" bottomMargin="20" uuid="b1234567-89ab-cdef-1234-567890abcdef">
+
+    <title>
+        <band height="150">
+            <staticText>
+                <reportElement x="100" y="60" width="400" height="40" uuid="txt1"/>
+                <textElement textAlignment="Center">
+                    <font size="24" isBold="true"/>
+                </textElement>
+                <text><![CDATA[✅ Hola desde JasperReports!]]></text>
+            </staticText>
+        </band>
+    </title>
+</jasperReport>
